@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* color: #141f39; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #141f39; 
+}
+
+.title {
+    font-size: 3rem !important;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 1.75rem;
+}
+
+.icons-img {
+    cursor: pointer;
+}
+
+/* more-about style starts here */
+.more-details-container-img {
+    height: 2rem;
+}
+
+.text-justify {
+    text-align: justify;
+  }
+/* more-about style ends here*/
+/* 
+.h {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+} */

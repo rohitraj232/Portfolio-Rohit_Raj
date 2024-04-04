@@ -1,20 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updating....</title>
 
-    <!-- favicons -->
-    <link rel="shortcut icon" href="assets/main/favicon.png" type="image/x-icon">
+  <!-- favicons -->
+  <link rel="shortcut icon" href="assets/main/favicon.png" type="image/x-icon">
 
-    <!-- css links -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+  <!-- navbar starts here -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid px-5 py-2">
+      <a class="navbar-brand" href="#">
+        <img src="assets/main/favicon.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+        <span class="fw-bold fs-4">Rohit Raj</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold fs-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+  <!-- <div id="canvas-shapes" class="h-75 position-relative"></div> -->
+  <!-- hero section starts here -->
+  <section id="canvas" class="h">
+    <div class="container">
+      <div class="row align-items-center mt-4 mt-md-5">
+        <div class="col-12 col-sm-6 d-flex justify-content-end">
+          <div class="hero-img">
+            <img src="assets/main/profile.png" width="400" height="400" alt="profile-picture" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6">
+          <div class="hero-details text-center">
+            <p class="fs-4 fw-semibold mb-1">Hello, I'm</p>
+            <p class="fw-bold title mb-1">Rohit Raj</p>
+            <p class="sub-title fw-bolder">Frontend Developer</p>
+          </div>
+
+          <div class="btn-container text-center">
+            <button class="rounded-pill border border-1 px-4 py-2 fw-medium"
+              onclick="window.open('./assets/Rohit-Raj-Resume.pdf')">Download CV</button>
+            <button class="rounded-pill border border-1 px-4 py-2 fw-medium" onclick="location.href='./#contact'">Contact
+              Info</button>
+          </div>
+
+          <div class="icons d-flex justify-content-center align-items-center mt-3">
+            <img src="assets/main/github.png" class="me-3 icons-img" alt="github-img" height="35">
+            <img src="assets/main/linkedin.png" class="icons-img" alt="linkedin-img" height="35">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section ends here -->
+
+
+  <section>
+    <div class="container">
+      <div class="more-about-container my-5 py-4">
+        <div class="more-about text-center mb-3 mb-md-4">
+          <h2 class="fs-6">Get To Know More</h2>
+          <h2 class="fs-1">About me</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="more-about-img">
+              <img src="assets/main/updated_Photo.jpg" class="img-fluid rounded-5" alt="more-about-img">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <div class="row more-details mb-2">
+              <div class="col-12 col-md-6">
+                <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
+                  <img src="assets/main/experience.png" alt="experience-img"
+                    class="img-fluid more-details-container-img">
+                  <h3 class="fs-5">Experience</h3>
+                  <p>Almost 1 Year <br>
+                    Frontend Development</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
+                  <img src="assets/main/e-2.png" alt="experience-img" class="img-fluid more-details-container-img">
+                  <h3 class="fs-5">Education</h3>
+                  <p>B.Tech <br> Bachelors Degree
+                    in CSE</p>
+                </div>
+              </div>
+            </div>
+            <div class="row introduction">
+              <div class="col">
+                <p class="text-justify">My name is Rohit Raj, from Bihar(India). I recently completed my bachelor's
+                  degree in CSE from Quantum University, Roorkee and also interned as a Web Developer at Unified Mentor
+                  Pvt Ltd. In terms of technical skills, I am good in Java, JavaScript, HTML/CSS, SQL and frameworks
+                  like ReactJs, Tailwind CSS, Bootstrap. Working with databases, specifically MySQL and PostgreSQL. My
+                  toolset includes GIT, MySQL Workbench, PgAdmin4, VS Code, Postman, IntelliJ IDEA and platforms like
+                  Windows, Linux, GitHub, Netlify, Figma.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="more-about-container my-5 py-4">
+        <div class="more-about text-center mb-3 mb-md-4">
+          <h2 class="fs-6">Explore My</h2>
+          <h2 class="fs-1">Technical Skills</h2>
+        </div>
+        <div class="row more-details mb-2 mb-md-4">
+          <div class="col-12 col-lg-6">
+            <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
+              <h3 class="mb-2">Frontend Development</h3>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end">
+                      <img src="assets/main/html.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">HTML</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/css.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">CSS</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/js.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">JavaScript</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/tailwind.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Tailwind CSS</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/bootstrap.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Bootstrap</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/react-2.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">React Js</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/jquery.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">JQuery</p>
+                      <p>Beginner</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/redux.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Redux</p>
+                      <p>Beginner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
+              <h3 class="mb-2">Other Skills</h3>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end">
+                      <img src="assets/main/java.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Java</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/git.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Git</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/github.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">GitHub</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/figma.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Figma</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/sql.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">SQL</p>
+                      <p>Beginner</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/mysql.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">MySQL</p>
+                      <p>Beginner</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/postman.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Postman</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-end ">
+                      <img src="assets/main/netlify.png" alt="technolgy-img" class="more-details-container-img">
+                    </div>
+                    <div class="col-6 text-start">
+                      <p class="mb-0 fw-bold pt-3">Netlify</p>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="projects-container my-5 py-4">
+        <div class="projects-header text-center mb-3 mb-md-4">
+          <h2 class="fs-6">Browse My Recent</h2>
+          <h2 class="fs-1">Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="project-card border border-2 rounded-4 shadow">
+              <div class="project-img p-2">
+                <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
+              </div>
+              <div class="project-detail">
+                <h3 class="text-center my-2">Nike Clone</h3>
+                <div class="btn-container text-center pt-2 mb-3">
+                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="project-card border border-2 rounded-4 shadow">
+              <div class="project-img p-2">
+                <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
+              </div>
+              <div class="project-detail">
+                <h3 class="text-center my-2">Nike Clone</h3>
+                <div class="btn-container text-center pt-2 mb-3">
+                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="project-card border border-2 rounded-4 shadow">
+              <div class="project-img p-2">
+                <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
+              </div>
+              <div class="project-detail">
+                <h3 class="text-center my-2">Nike Clone</h3>
+                <div class="btn-container text-center pt-2 mb-3">
+                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="project-card border border-2 rounded-4 shadow">
+              <div class="project-img p-2">
+                <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
+              </div>
+              <div class="project-detail">
+                <h3 class="text-center my-2">Nike Clone</h3>
+                <div class="btn-container text-center pt-2 mb-3">
+                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="project-card border border-2 rounded-4 shadow">
+              <div class="project-img p-2">
+                <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
+              </div>
+              <div class="project-detail">
+                <h3 class="text-center my-2">Nike Clone</h3>
+                <div class="btn-container text-center pt-2 mb-3">
+                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="project-card border border-2 rounded-4 shadow">
+              <div class="project-img p-2">
+                <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
+              </div>
+              <div class="project-detail">
+                <h3 class="text-center my-2">Nike Clone</h3>
+                <div class="btn-container text-center pt-2 mb-3">
+                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="contact-me mb-3 mb-md-4">
+        <div class="contact-header text-center mb-3 mb-md-4">
+          <h2 class="fs-6">Get In Touch</h2>
+          <h2 class="fs-1">Contact Me</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="contact-links d-sm-flex justify-content-around align-items-center border border-2 rounded-4 pt-4 pb-1 px-3">
+                <div class="email-container d-flex justify-content-center mb-3 md-sm-1">
+                    <img src="assets/main/email.png" alt="email-img" class="img-fluid more-details-container-img">
+                    <p><a href="">rohitsp927@gmail.com</a></p>
+                </div>
+                <div class="linkedin-container d-flex justify-content-center mb-3 md-sm-1">
+                  <img src="assets/main/.png" alt="linkedin-img" class="img-fluid more-details-container-img">
+                    <p><a href="">LinkedIn</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 </body>
 <!-- script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+  integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>
