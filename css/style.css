@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
     font-size: 3rem !important;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .sub-title {
@@ -41,3 +40,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 999;
     background-color: #fff;
 } */
+
+@media screen and (max-width: 768px) {
+    .hero-pic {
+      width: 200px;
+      height: 200px;
+    }
+  }

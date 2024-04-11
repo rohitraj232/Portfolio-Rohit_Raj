@@ -11,6 +11,9 @@
 
   <!-- css links -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -30,16 +33,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold fs-4">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -48,26 +51,28 @@
   <!-- navbar ends here -->
   <!-- <div id="canvas-shapes" class="h-75 position-relative"></div> -->
   <!-- hero section starts here -->
-  <section id="canvas" class="h">
+  <section class="page-1-hero">
     <div class="container">
       <div class="row align-items-center mt-4 mt-md-5">
-        <div class="col-12 col-sm-6 d-flex justify-content-end">
+        <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center  justify-md-content-end">
           <div class="hero-img">
-            <img src="assets/main/profile.png" width="400" height="400" alt="profile-picture" class="img-fluid">
+            <img src="assets/main/profile.png" width="400" height="400" alt="profile-picture"
+              class="img-fluid hero-pic">
           </div>
         </div>
 
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-12 col-md-6 mt-3 mt-md-0">
           <div class="hero-details text-center">
-            <p class="fs-4 fw-semibold mb-1">Hello, I'm</p>
-            <p class="fw-bold title mb-1">Rohit Raj</p>
-            <p class="sub-title fw-bolder">Frontend Developer</p>
+            <p class="fs-4 fw-semibold mb-0">Hi, Myself &#128075;</p>
+            <p class="fw-bold title mb-0">Rohit Raj</p>
+            <p class="sub-title fw-bolder">And I'm a Frontend Developer</p>
           </div>
 
           <div class="btn-container text-center">
-            <button class="rounded-pill border border-1 px-4 py-2 fw-medium"
+            <button class="rounded-pill border border-1 px-4 py-2 fw-medium me-2"
               onclick="window.open('./assets/Rohit-Raj-Resume.pdf')">Download CV</button>
-            <button class="rounded-pill border border-1 px-4 py-2 fw-medium" onclick="location.href='./#contact'">Contact
+            <button class="rounded-pill border border-1 px-4 py-2 fw-medium"
+              onclick="location.href='./#contact'">Contact
               Info</button>
           </div>
 
@@ -82,23 +87,23 @@
   <!-- hero section ends here -->
 
 
-  <section>
+  <section class="page-2-about-me" id="about">
     <div class="container">
       <div class="more-about-container my-5 py-4">
         <div class="more-about text-center mb-3 mb-md-4">
-          <h2 class="fs-6">Get To Know More</h2>
-          <h2 class="fs-1">About me</h2>
+          <h2 class="fs-6 page-title">Get To Know More</h2>
+          <h2 class="fs-1 page-title">About me</h2>
         </div>
         <div class="row">
-          <div class="col-12 col-md-4 mb-4">
+          <div class="col-12 col-md-4 mb-4 about-me-box box-1">
             <div class="more-about-img">
               <img src="assets/main/updated_Photo.jpg" class="img-fluid rounded-5" alt="more-about-img">
             </div>
           </div>
 
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 about-me-box">
             <div class="row more-details mb-2">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6 box-2">
                 <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
                   <img src="assets/main/experience.png" alt="experience-img"
                     class="img-fluid more-details-container-img">
@@ -108,7 +113,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6 about-me-box box-3">
                 <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
                   <img src="assets/main/e-2.png" alt="experience-img" class="img-fluid more-details-container-img">
                   <h3 class="fs-5">Education</h3>
@@ -118,7 +123,7 @@
               </div>
             </div>
             <div class="row introduction">
-              <div class="col">
+              <div class="col about-me-box box-4">
                 <p class="text-justify">My name is Rohit Raj, from Bihar(India). I recently completed my bachelor's
                   degree in CSE from Quantum University, Roorkee and also interned as a Web Developer at Unified Mentor
                   Pvt Ltd. In terms of technical skills, I am good in Java, JavaScript, HTML/CSS, SQL and frameworks
@@ -133,23 +138,23 @@
     </div>
   </section>
 
-  <section>
+  <section class="page-3-technical-skills">
     <div class="container">
-      <div class="more-about-container my-5 py-4">
+      <div class="more-about-container my-1 py-2">
         <div class="more-about text-center mb-3 mb-md-4">
-          <h2 class="fs-6">Explore My</h2>
-          <h2 class="fs-1">Technical Skills</h2>
+          <h2 class="fs-6 page-title-skills">Explore My</h2>
+          <h2 class="fs-1 page-title-skills">Technical Skills</h2>
         </div>
         <div class="row more-details mb-2 mb-md-4">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 technical-skill-box">
             <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
               <h3 class="mb-2">Frontend Development</h3>
 
               <div class="row">
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end">
-                      <img src="assets/main/html.png" alt="technolgy-img" class="more-details-container-img">
+                      <img src="assets/main/html.png" alt="technolgy-img" class="more-details-container-img ">
                     </div>
                     <div class="col-6 text-start">
                       <p class="mb-0 fw-bold pt-3">HTML</p>
@@ -159,7 +164,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/css.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -171,7 +176,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/js.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -183,7 +188,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/tailwind.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -195,7 +200,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/bootstrap.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -207,7 +212,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/react-2.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -219,7 +224,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/jquery.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -231,7 +236,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/redux.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -247,13 +252,13 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 technical-skill-box">
             <div class="more-details-container text-center border border-2 rounded-4 py-3 mb-3">
               <h3 class="mb-2">Other Skills</h3>
 
               <div class="row">
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end">
                       <img src="assets/main/java.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -265,7 +270,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/git.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -277,7 +282,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/github.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -289,7 +294,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/figma.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -301,7 +306,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/sql.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -313,7 +318,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/mysql.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -325,7 +330,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/postman.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -337,7 +342,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <div class="row align-items-center">
+                  <div class="row align-items-center left-to-right-animation">
                     <div class="col-6 text-end ">
                       <img src="assets/main/netlify.png" alt="technolgy-img" class="more-details-container-img">
                     </div>
@@ -357,16 +362,144 @@
     </div>
   </section>
 
-  <section>
+
+  <section class="page-4-experience" id="experience">
+    <div class="container my-3 py-2">
+      <div class="experience-details-container">
+        <div class="experience-header text-center mb-3 mb-md-4">
+          <h2 class="fs-6">Get To Know More</h2>
+          <h2 class="fs-1">About My Experience</h2>
+        </div>
+
+        <div class="row">
+          <div class="col experience-box-1">
+            <div class="row justify-content-around">
+              <div class="col-lg-1">
+                <div class="company-logo mb-2 mb-sm-1">
+                  <img src="assets/main/mentorsity.png" width="150" alt="company-logo" class="mentorsity-logo">
+                </div>
+              </div>
+              <div class="col-lg-8"></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-1">
+                <div class="border-start border-2 h-100">
+                </div>
+              </div>
+              <div class="col-lg-8 ">
+                <div class="timeline-container">
+                  <div class="timeline-1 border border-2 py-2 px-3 rounded-3 shadow">
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <p class="mb-0">
+                          <span class="fs-4 fw-medium">React Js Developer Intern</span>
+                        </p>
+                        <p>
+                          <span class="fw-medium"> - <i class="fa-solid fa-building"></i> Mentorsity <a
+                              class="link-offset-1 ms-1" href="#">Certificate </a></span>
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <p class="mb-0 text-start text-sm-end">
+                          <span class="fw-medium me-1 me-md-4"><i class="fa-solid fa-location-dot text-danger me-1"></i>
+                            Remote (New Delhi)</span>
+                        </p>
+                        <p class="text-start text-sm-end">
+                          <span class="fw-normal me-1 me-md-4"><i class="fa-solid fa-clock text-primary me-1"></i> Sep
+                            2023 - Jan 2024</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <ul class="pe-3">
+                      <li class="text-justify">I actively engaged in building dynamic and responsive user interfaces
+                        using ReactJS. Designed and developed page
+                        layouts, custom navigation, animation buttons.</li>
+                      <li class="text-justify">Created and maintained code for front-end components to improve
+                        usability, resulting in a 10% increase in user
+                        engagement and a 5% increase in website conversions.</li>
+                      <li class="text-justify">Implemented Tailwind CSS to streamline and optimize the styling process,
+                        ensuring a seamless user experience.</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col experience-box-2">
+            <div class="row justify-content-around">
+              <div class="col-lg-1">
+                <div class="company-logo mb-2 mb-sm-1 pt-3">
+                  <img src="assets/main/unified-mentor.png" width="150" alt="company-logo">
+                </div>
+              </div>
+              <div class="col-lg-8"></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-1">
+                <div class="border-start border-2 h-100">
+                </div>
+              </div>
+              <div class="col-lg-8 ">
+                <div class="timeline-container">
+                  <div class="timeline-1 border border-2 py-2 px-3 rounded-3 shadow">
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <p class="mb-0">
+                          <span class="fs-4 fw-medium">Web Developer Intern</span>
+                        </p>
+                        <p>
+                          <span class="fw-medium"> - <i class="fa-solid fa-building"></i> Unified Mentor Pvt. Ltd. <a
+                              class="link-offset-1 ms-1" href="#">Certificate </a></span>
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <p class="mb-0 text-start text-sm-end">
+                          <span class="fw-medium me-1 me-md-4"><i class="fa-solid fa-location-dot text-danger me-1"></i>
+                            Remote (Gurugram)</span>
+                        </p>
+                        <p class="text-start text-sm-end">
+                          <span class="fw-normal me-1 me-md-4"><i class="fa-solid fa-clock text-primary me-1"></i> May
+                            2023 - Jul 2023</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <ul class="pe-3">
+                      <li class="text-justify">Actively involved in the creation and maintenance of web applications,
+                        using HTML, CSS, Bootstrap and JavaScript.</li>
+                      <li class="text-justify">Contributed to UI improvements by implementing interactive elements and
+                        animations with JavaScript and CSS.</li>
+                      <li class="text-justify">Utilized version control systems, such as Git, to track changes and
+                        collaborate effectively with team members.</li>
+                      <li class="text-justify">Analyzed requirements to determine the best approach for developing new
+                        features or improving existing functionality.</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="page-5-projects" id="projects">
     <div class="container">
-      <div class="projects-container my-5 py-4">
+      <div class="projects-container my-2 py-4">
         <div class="projects-header text-center mb-3 mb-md-4">
           <h2 class="fs-6">Browse My Recent</h2>
           <h2 class="fs-1">Projects</h2>
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 project-box">
             <div class="project-card border border-2 rounded-4 shadow">
               <div class="project-img p-2">
                 <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
@@ -374,14 +507,17 @@
               <div class="project-detail">
                 <h3 class="text-center my-2">Nike Clone</h3>
                 <div class="btn-container text-center pt-2 mb-3">
-                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
-                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 me-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">Live
+                      Demo</a></button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 project-box">
             <div class="project-card border border-2 rounded-4 shadow">
               <div class="project-img p-2">
                 <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
@@ -389,14 +525,17 @@
               <div class="project-detail">
                 <h3 class="text-center my-2">Nike Clone</h3>
                 <div class="btn-container text-center pt-2 mb-3">
-                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
-                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 me-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">Live
+                      Demo</a></button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 project-box">
             <div class="project-card border border-2 rounded-4 shadow">
               <div class="project-img p-2">
                 <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
@@ -404,14 +543,17 @@
               <div class="project-detail">
                 <h3 class="text-center my-2">Nike Clone</h3>
                 <div class="btn-container text-center pt-2 mb-3">
-                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
-                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 me-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">Live
+                      Demo</a></button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 project-box">
             <div class="project-card border border-2 rounded-4 shadow">
               <div class="project-img p-2">
                 <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
@@ -419,14 +561,17 @@
               <div class="project-detail">
                 <h3 class="text-center my-2">Nike Clone</h3>
                 <div class="btn-container text-center pt-2 mb-3">
-                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
-                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 me-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">Live
+                      Demo</a></button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 project-box">
             <div class="project-card border border-2 rounded-4 shadow">
               <div class="project-img p-2">
                 <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
@@ -434,14 +579,17 @@
               <div class="project-detail">
                 <h3 class="text-center my-2">Nike Clone</h3>
                 <div class="btn-container text-center pt-2 mb-3">
-                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
-                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 me-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">Live
+                      Demo</a></button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 project-box">
             <div class="project-card border border-2 rounded-4 shadow">
               <div class="project-img p-2">
                 <img src="assets/main/nike-clone.png" alt="nike-clone" class="img-fluid rounded-4">
@@ -449,20 +597,24 @@
               <div class="project-detail">
                 <h3 class="text-center my-2">Nike Clone</h3>
                 <div class="btn-container text-center pt-2 mb-3">
-                  <button class="rounded-pill border border-1 px-5 py-2 me-2 fw-medium"><a href="" class="text-dark">GitHub</a></button>
-                  <button class="rounded-pill border border-1 px-5 py-2 fw-medium"><a href="" class="text-dark">Live Demo</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 me-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">GitHub</a></button>
+                  <button class="rounded-pill border border-1 px-4 py-2 fw-medium mb-3 mb-lg-1"><a href=""
+                      class="text-dark">Live
+                      Demo</a></button>
                 </div>
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
   </section>
 
 
-  <section>
+
+  <section class="page-6-contact-me" id="contact">
     <div class="container">
       <div class="contact-me mb-3 mb-md-4">
         <div class="contact-header text-center mb-3 mb-md-4">
@@ -471,15 +623,26 @@
         </div>
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-8 col-lg-6">
-            <div class="contact-links d-sm-flex justify-content-around align-items-center border border-2 rounded-4 pt-4 pb-1 px-3">
-                <div class="email-container d-flex justify-content-center mb-3 md-sm-1">
-                    <img src="assets/main/email.png" alt="email-img" class="img-fluid more-details-container-img">
-                    <p><a href="">rohitsp927@gmail.com</a></p>
-                </div>
-                <div class="linkedin-container d-flex justify-content-center mb-3 md-sm-1">
-                  <img src="assets/main/.png" alt="linkedin-img" class="img-fluid more-details-container-img">
-                    <p><a href="">LinkedIn</a></p>
-                </div>
+            <div
+              class="contact-links d-sm-flex justify-content-around align-items-center border border-2 rounded-4 pt-4 pb-1 px-3">
+              <div class="email-container d-flex justify-content-center mb-3 md-sm-1">
+                <img src="assets/main/email-2.png" alt="email-img"
+                  class="img-fluid more-details-container-img contact-img">
+                <p class="ms-2 fw-normal fs-5"><a
+                    class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#">
+                    rohitsp927@gmail.com
+                  </a></p>
+              </div>
+              <div class="linkedin-container d-flex justify-content-center mb-3 md-sm-1">
+                <img src="assets/main/linkedin-1.png" alt="linkedin-img"
+                  class="img-fluid more-details-container-img contact-img">
+                <p class="ps-2 fw-normal fs-5"><a
+                    class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#">
+                    LinkedIn
+                  </a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -487,6 +650,17 @@
     </div>
   </section>
 
+
+  <div class="container-fluid m-0 p-0">
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        Copyright ©, 2024 Rohit Raj. All Rights Reserved.
+        <!-- <a class="text-body" href="">Rohit Raj</a> -->
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
 
 
 </body>
