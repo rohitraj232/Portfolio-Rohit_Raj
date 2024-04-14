@@ -61,6 +61,7 @@ gsap.from(".about-me-box", {
   y: 20,
   opacity: 0,
   duration: 1,
+  delay: 1,
   stagger: 0.3,
   scrollTrigger: {
     trigger: ".about-me-box",
@@ -74,6 +75,7 @@ gsap.from(".page-3-technical-skills .more-about h2", {
   y: 20,
   opacity: 0,
   duration: 1,
+  delay: 0.5,
   stagger: 0.5,
   scrollTrigger: {
     trigger: ".page-3-technical-skills .more-about h2",
@@ -100,6 +102,7 @@ gsap.from(".technical-skill-box", {
   y: 20,
   opacity: 0,
   duration: 0.5,
+  delay: 1,
   stagger: 0.3,
   scrollTrigger: {
     trigger: ".technical-skill-box",
