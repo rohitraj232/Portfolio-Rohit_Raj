@@ -1,50 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* body style starts here */
+html,
 body {
-    color: #141f39;
+  overflow-x: hidden;
+  color: #141f39;
 }
 /* body style endss here */
 
-
 /* heading style starts here */
-h1, h2, h3, h4, h5, h6 {
-    color: #141f39; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #141f39;
 }
 /* heading style ends here */
 
-
 /* header style starts here */
 .title {
-    font-size: 3rem !important;
+  font-size: 3rem !important;
 }
 .sub-title {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 .icons-img {
-    cursor: pointer;
+  cursor: pointer;
 }
 /* header style ends here */
 
-
 /* more-about style starts here */
 .more-details-container-img {
-    height: 2rem;
+  height: 2rem;
 }
 .text-justify {
-    text-align: justify;
-  }
+  text-align: justify;
+}
 /* more-about style ends here*/
 
-
-
 @media screen and (max-width: 768px) {
-    .hero-pic {
-      width: 200px;
-      height: 200px;
-    }
+  .hero-pic {
+    width: 200px;
+    height: 200px;
   }
+}

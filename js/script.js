@@ -43,47 +43,47 @@ tl.from(".icons-img", {
 //   stagger: 0.1
 // })
 
-gsap.from(".page-2-about-me .more-about h2", {
-  y: 40,
-  opacity: 0,
-  duration: 1,
-  delay: 0.5,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".page-2-about-me .more-about h2",
-    scroller: "body",
-    // markers: true,
-    start: "top 90%",
-  },
-});
+// gsap.from(".page-2-about-me .more-about h2", {
+//   y: 40,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0.5,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: ".page-2-about-me .more-about h2",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 90%",
+//   },
+// });
 
-gsap.from(".about-me-box", {
-  y: 20,
-  opacity: 0,
-  duration: 1,
-  delay: 1,
-  stagger: 0.3,
-  scrollTrigger: {
-    trigger: ".about-me-box",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".about-me-box", {
+//   y: 20,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 1,
+//   stagger: 0.3,
+//   scrollTrigger: {
+//     trigger: ".about-me-box",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
-gsap.from(".page-3-technical-skills .more-about h2", {
-  y: 20,
-  opacity: 0,
-  duration: 1,
-  delay: 0.5,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".page-3-technical-skills .more-about h2",
-    scroller: "body",
-    // markers: true,
-    start: "top 90%",
-  },
-});
+// gsap.from(".page-3-technical-skills .more-about h2", {
+//   y: 20,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0.5,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: ".page-3-technical-skills .more-about h2",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 90%",
+//   },
+// });
 
 // gsap.from(".technical-skill-box", {
 //     y: 20,
@@ -98,110 +98,109 @@ gsap.from(".page-3-technical-skills .more-about h2", {
 //     }
 // })
 
-gsap.from(".technical-skill-box", {
-  y: 20,
-  opacity: 0,
-  duration: 0.5,
-  delay: 1,
-  stagger: 0.3,
-  scrollTrigger: {
-    trigger: ".technical-skill-box",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-  onComplete: function () {
-    // Second animation starts when first animation is complete
-    gsap.from(".left-to-right-animation", {
-      x: -20,
-      opacity: 0,
-      duration: 1,
-      // markers: true,
-      stagger: 0.1,
-    });
-  },
-});
+// gsap.from(".technical-skill-box", {
+//   y: 20,
+//   opacity: 0,
+//   duration: 0.5,
+//   delay: 1,
+//   stagger: 0.3,
+//   scrollTrigger: {
+//     trigger: ".technical-skill-box",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+//   onComplete: function () {
+//     gsap.from(".left-to-right-animation", {
+//       x: -20,
+//       opacity: 0,
+//       duration: 1,
+//       markers: true,
+//       stagger: 0.1,
+//     });
+//   },
+// });
 
-gsap.from(".page-4-experience .experience-header h2", {
-  y: 20,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".page-4-experience .experience-header h2",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".page-4-experience .experience-header h2", {
+//   y: 20,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: ".page-4-experience .experience-header h2",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
-gsap.from(".experience-box-1", {
-  y: 30,
-  opacity: 0,
-  duration: 1,
-  delay: 0.5,
-  stagger: 0.4,
-  scrollTrigger: {
-    trigger: ".experience-box-1",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".experience-box-1", {
+//   y: 30,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0.5,
+//   stagger: 0.4,
+//   scrollTrigger: {
+//     trigger: ".experience-box-1",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
-gsap.from(".experience-box-2", {
-  y: 30,
-  opacity: 0,
-  duration: 1,
-  delay: 0.5,
-  stagger: 0.4,
-  scrollTrigger: {
-    trigger: ".experience-box-2",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".experience-box-2", {
+//   y: 30,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0.5,
+//   stagger: 0.4,
+//   scrollTrigger: {
+//     trigger: ".experience-box-2",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
-gsap.from(".page-5-projects .projects-header h2", {
-  y: 20,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".page-5-projects .projects-header h2",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".page-5-projects .projects-header h2", {
+//   y: 20,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: ".page-5-projects .projects-header h2",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
-gsap.from(".project-box", {
-  y: 30,
-  opacity: 0,
-  duration: 0.8,
-  delay: 0.5,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".project-box",
-    scroller: "body",
-    // markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".project-box", {
+//   y: 30,
+//   opacity: 0,
+//   duration: 0.8,
+//   delay: 0.5,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: ".project-box",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
-gsap.from(".page-6-contact-me .contact-header h2", {
-  y: 20,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.5,
-  scrollTrigger: {
-    trigger: ".page-6-contact-me .contact-header h2",
-    scroller: "body",
-    //   markers: true,
-    start: "top 80%",
-  },
-});
+// gsap.from(".page-6-contact-me .contact-header h2", {
+//   y: 20,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: ".page-6-contact-me .contact-header h2",
+//     scroller: "body",
+//     markers: true,
+//     start: "top 80%",
+//   },
+// });
 
 gsap.to(".contact-img", {
   y: -5,
