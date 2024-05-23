@@ -210,3 +210,64 @@ gsap.to(".contact-img", {
   ease: "elastic.out(1, 0.3)", // Easing function
   duration: 1, // Duration of animation
 });
+
+
+// moving effect (icons) of hero section
+document.addEventListener("DOMContentLoaded", () => {
+  const handleMouseMove = (e) => {
+    document.querySelectorAll(".object").forEach((move) => {
+      const moving_value = move.getAttribute("data-value");
+      const x = (e.clientX * moving_value) / 200; // Adjusting the factor to make the effect subtle
+      const y = (e.clientY * moving_value) / 200; // Adjusting the factor to make the effect subtle
+
+      move.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  };
+
+  document.addEventListener("mousemove", handleMouseMove);
+
+  // Clean up function to remove the event listener
+  window.addEventListener("beforeunload", () => {
+    document.removeEventListener("mousemove", handleMouseMove);
+  });
+});
+
+// animation for hero section icons
+gsap.from(".a", {
+  y: -100,
+  opacity: 0,
+  duration: 0.8,
+  //   delay: 0.5,
+  // rotation: 360,
+  ease: "bounce.out",
+  stagger: 0.3,
+});
+
+// navbar close onclick function
+document.addEventListener("DOMContentLoaded", () => {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  const toggleNavbarCollapse = () => {
+      navbarCollapse.classList.toggle("show");
+  };
+
+  const closeNavbarCollapse = () => {
+      navbarCollapse.classList.remove("show");
+  };
+
+  navbarToggler.addEventListener("click", toggleNavbarCollapse);
+
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((navLink) => {
+      navLink.addEventListener("click", closeNavbarCollapse);
+  });
+
+  // Clean up the event listeners when the component unmounts or page is navigated away
+  window.addEventListener("beforeunload", () => {
+      navbarToggler.removeEventListener("click", toggleNavbarCollapse);
+      navLinks.forEach((navLink) => {
+          navLink.removeEventListener("click", closeNavbarCollapse);
+      });
+  });
+});
