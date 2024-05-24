@@ -244,30 +244,31 @@ gsap.from(".a", {
 });
 
 // navbar close onclick function
-document.addEventListener("DOMContentLoaded", () => {
-  const navbarToggler = document.querySelector(".navbar-toggler");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('#navbarSupportedContent');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-  const toggleNavbarCollapse = () => {
-      navbarCollapse.classList.toggle("show");
-  };
-
-  const closeNavbarCollapse = () => {
-      navbarCollapse.classList.remove("show");
-  };
-
-  navbarToggler.addEventListener("click", toggleNavbarCollapse);
-
-  const navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach((navLink) => {
-      navLink.addEventListener("click", closeNavbarCollapse);
+  // Bootstrap Collapse instance
+  const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+    toggle: false
   });
 
-  // Clean up the event listeners when the component unmounts or page is navigated away
-  window.addEventListener("beforeunload", () => {
-      navbarToggler.removeEventListener("click", toggleNavbarCollapse);
-      navLinks.forEach((navLink) => {
-          navLink.removeEventListener("click", closeNavbarCollapse);
-      });
+  // Toggle the navbar when clicking on the button
+  navbarToggler.addEventListener('click', function () {
+    if (navbarCollapse.classList.contains('show')) {
+      bsCollapse.hide();
+    } else {
+      bsCollapse.show();
+    }
+  });
+
+  // Close the navbar when clicking on a link
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      if (navbarCollapse.classList.contains('show')) {
+        bsCollapse.hide();
+      }
+    });
   });
 });
