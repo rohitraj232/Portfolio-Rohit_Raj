@@ -175,3 +175,21 @@ h6 {
   left: 15%;
   object-fit: contain;
 }
+
+.technology-img {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 15px;
+border: 1px solid #00AA45;
+}
+.technology-name {
+  color: #00AA45;
+  font-size: 0.6875rem;
+}
+
+.wrapper_teckstacks {
+  display: flex;
+  flex-wrap: wrap;
+}
